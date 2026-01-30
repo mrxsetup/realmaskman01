@@ -90,7 +90,8 @@ REAL MASK MAN
 <div class="flex gap-4 bg-white/5 p-5 rounded-xl border border-white/10 mb-6">
 
 <div class="w-24 h-24 rounded-xl bg-gradient-to-r from-violet-500 to-pink-500 p-[3px] glow">
-<img src="./image.png" class="rounded-xl w-full h-full object-cover">
+<img src="https://github.com/mrxsetup/realmaskman01/blob/main/MASK.jpg?raw=true" 
+class="rounded-xl w-full h-full object-cover">
 </div>
 
 <div class="flex-1">
@@ -148,14 +149,17 @@ For entertainment only<br>
 </div>
 
 <script>
-// Animated Members Counter
+// MEMBERS COUNTER 0 → 30,000
 let count = document.getElementById("count");
 let num = 0;
 let interval = setInterval(() => {
-num += 1200;
+num += 600;
 count.innerText = num.toLocaleString();
-if (num >= 100000) clearInterval(interval);
-}, 25);
+if (num >= 30000) {
+count.innerText = "30,000";
+clearInterval(interval);
+}
+}, 30);
 </script>
 
 </body>
